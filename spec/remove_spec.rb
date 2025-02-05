@@ -12,7 +12,7 @@ describe Fzip::Zipper, 'remove' do
 
   context 'when removing the top node' do
     it 'should raise an exception' do
-      expect { zipper.remove }.to raise_error
+      expect { zipper.remove }.to raise_error(RuntimeError, "Remove at top")
     end
   end
 
