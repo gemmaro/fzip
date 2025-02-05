@@ -40,10 +40,10 @@ describe Fzip::Zipper, 'next' do
   it 'should go to the end' do
     z = zipper
     9.times do
-      expect(z.end?).to be_false
+      expect(z.end?).to be false
       z = z.next
     end
-    expect(z.end?).to be_true
+    expect(z.end?).to be true
   end
 
 end

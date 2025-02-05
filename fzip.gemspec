@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.extra_rdoc_files = %w[README.md]
 
   gem.add_development_dependency 'rake', '~> 10.1'
-  gem.add_development_dependency 'rspec', '~> 2.14'
+  gem.add_development_dependency 'rspec', '~> 3.12'
 end
