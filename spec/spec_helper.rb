@@ -1,3 +1,2 @@
-$LOAD_PATH.unshift(Pathname(__FILE__).dirname.parent.join('lib'))
-
+$LOAD_PATH.unshift(File.join(__dir__, "../lib"))
 require 'fzip'
