@@ -12,7 +12,6 @@ Gem::Specification.new do |gem|
 
   gem.require_paths    = %w[lib]
   gem.files            = `git ls-files`.split($/)
-  gem.test_files       = `git ls-files -- spec`.split($/)
   gem.extra_rdoc_files = %w[README.md]
 
   gem.add_development_dependency 'rake', '~> 10.1'
