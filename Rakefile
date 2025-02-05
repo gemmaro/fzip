@@ -1,4 +1,5 @@
 require 'rubygems/package_task'
+require "rspec/core/rake_task"
 
 spec = Gem::Specification.load(File.expand_path('../fzip.gemspec', __FILE__))
 gem = Gem::PackageTask.new(spec)
@@ -10,3 +11,5 @@ task :push => :gem do
   sh "git push --tags"
   sh "gem push pkg/fzip-#{Fzip::VERSION}.gem"
 end
+
+RSpec::Core::RakeTask.new
